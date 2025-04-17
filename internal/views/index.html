@@ -1,0 +1,11 @@
+{{ if .LoggedInUserId}} {{template "header" .LoggedInUserId }} {{else}}
+{{template "header" }} {{end}} {{template "_posts" . }}
+
+<!-- {{if and . .User.Name}} -->
+
+<!-- <br /> -->
+
+<!-- <br /> -->
+<!-- {{else}} <span> Welcome, Unknown</span> -->
+<!-- {{end}}  -->
+{{template "footer"}}
